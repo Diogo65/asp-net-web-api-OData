@@ -1,0 +1,12 @@
+/api/vagas?$filter=filtro: aplica filtros diversos seguindo do protocolo OData.
+
+$filter=Propriedade eq Valor		Registros cuja “Propriedade” seja igual a “Valor”.
+$filter=Propriedade gt Valor		Registros cuja “Propriedade” seja maior que (greater than) “Valor”.
+$filter=Propriedade lt Valor		Registros cuja “Propriedade” seja menor que (less than) “Valor”.
+$filter=substring(‘Valor’, Propriedade)	Registros cuja “Propriedade” contenha o texto “Valor”.
+
+Exemplos de Filtros
+
+$orderby=Salario		Ordena pelo campo SalarioInicial de forma crescente.
+$orderby=Salario, Id desc	Ordena pelo campo SalarioInicial de forma crescente e pelo campo Id de forma decrescente.
+$select=Titulo, Salario		Lista apenas os campos Titulo e Salario.
